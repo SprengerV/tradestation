@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-	res.send('WELCOME HOME (SANITARIUM)');
+	res.render('home');
 });
 
 module.exports = router;

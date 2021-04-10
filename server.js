@@ -1,20 +1,19 @@
 const path = require('path');
 const express = require('express');
-const exphbs = require('express-handlebars');
+const hbs = require('express-handlebars');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const routes = require('./controllers');
 
 require('dotenv').config();
 
-const app = express();
 const PORT = process.env.PORT || 3000;
 
-const hbs = exphbs.create({ extname: '.hbs' });
+const app = express();
 
 // Templating engine
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+app.engine('hbs', hbs({ extname: 'hbs' }));
+app.set('view engine', 'hbs');
 
 // Configure express
 app.use(logger('dev'));
