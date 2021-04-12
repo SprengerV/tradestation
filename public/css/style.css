@@ -1,6 +1,46 @@
 body {
   background-color: whitesmoke;
 }
-navbar {
-  background-color: greenishblue;
+header {
+  background-color: teal;
+  color: white;
+  font-size: 36px;
+  font-variant: small-caps;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+main {
+  background-color: white;
+  margin: 5vh auto 5vh auto;
+  width: 85vw;
+}
+.selectPair {
+  display: flex;
+  justify-content: center;
+}
+#navbarBrand {
+  margin: 20px;  
+}
+#selectBtn {
+  grid-row: 5 / 6;
+  grid-column: 7 / 8;
+  height: 24px;
+  width: 60%;
+  justify-self: center;
+}
+#selectForm {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 30vh;
+  width: 70vw;
+  margin: 15px auto 15px auto;
+}
+#v {
+  color: darkkhaki;
+  margin: 20px 20px 20px -10px;
+}
+

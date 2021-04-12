@@ -26,7 +26,7 @@ app.use(routes);
 // Connect to mongodb
 const mongoOpt = {
 	useNewUrlParser: true,
-	useUnifiiedTopology: true,
+	useUnifiedTopology: true,
 	family: 4
 };
 mongoose
